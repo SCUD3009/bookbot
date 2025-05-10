@@ -15,3 +15,19 @@ def get_num_character(text):
         else:
             num_character[char] += 1
     return num_character
+
+def sort_key(dict):
+    return dict["num"]
+
+def sort(num_character):
+    sorted = []
+    for k in num_character:
+        char_dict = {}
+        num = num_character[k]
+        if k.isalpha():
+            char_dict["char"] = k
+            char_dict["num"] = num
+            sorted.append(char_dict)
+    sorted.sort(reverse=True, key=sort_key)
+
+    return sorted
