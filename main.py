@@ -8,8 +8,7 @@ def main():
     num_character = get_num_character(text)
     #print(text) removed for no wall of text every time
     print(
-        f"{num_words} words found in the document.\n", 
-        f"Used Characters:{num_character}"
+        f"{num_words} words found in the document.\nUsed Characters:{num_character}"
           )
 
 
